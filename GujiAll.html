@@ -1,0 +1,90 @@
+﻿<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=1366, height=768, initial-scale=0, minimum-scale=0, maximum-scale=0" />
+    <title></title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/list.css" rel="stylesheet" />
+    <link href="WebUI/css/ScrollBar/nanoscroller.css" rel="stylesheet" type="text/css" />
+    <script src="WebUI/js/jquery-1.4.1.min.js"></script>
+    <script src="WebUI/js/ScrollBar/jquery.nanoscroller.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="main_box">
+        <!--关闭按钮-->
+        <a class="tipsbox_buttonBar dock" lock="false"></a>
+        <div class="filesbox_content" style="position:relative;">
+            <div class="nano" id="nano">
+                <div class="content">
+                    <h4 class="h4_tit">古籍全本</h4>
+                    <div class="bookshelf_top">
+                        <div class="shelf_l"></div>
+                        <div class="shelf_m"></div>
+                        <div class="shelf_r"></div>
+                    </div>
+                    <ul class="book_list">
+                        <li>
+                            <p><a href="javascript://"><img src="WebUI/images/list/book1.jpg" /></a></p>
+                            <h5>增广注释音辩唐柳先生集</h5>
+                            <a href="javascript://" class="read"></a>
+                        </li>
+                        <li>
+                            <p><a href="javascript://"><img src="WebUI/images/list/book2.jpg" /></a></p>
+                            <h5>国朝文类</h5>
+                            <a href="javascript://" class="read"></a>
+                        </li>
+                        <li>
+                            <p><a href="javascript://"><img src="WebUI/images/list/book3.jpg" /></a></p>
+                            <h5>乐府诗集（元至正元年）</h5>
+                            <a href="javascript://" class="read"></a>
+                        </li>
+                        <li>
+                            <p><a href="javascript://"><img src="WebUI/images/list/book4.jpg" /></a></p>
+                            <h5>诸儒笺解古文真宝1册</h5>
+                            <a href="javascript://" class="read"></a>
+                        </li>
+                        <li>
+                            <p><a href="javascript://"><img src="WebUI/images/list/book5.jpg" /></a></p>
+                            <h5>诸儒笺解古文真宝2册</h5>
+                            <a href="javascript://" class="read"></a>
+                        </li>
+                    </ul>
+                    <div class="bookshelf_bot">
+                        <div class="shelf_l"></div>
+                        <div class="shelf_m"></div>
+                        <div class="shelf_r"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            $(".tipsbox_buttonBar").click(function () {
+                $(window.frameElement).parent().siblings(".filters").hide();
+                $(window.frameElement).parent().removeClass("shows");
+                setTimeout(function () {
+                    $(window.frameElement).parent().hide();
+                }, 300)
+                $(window.frameElement).css("display", "none");
+            })
+            $(".book_list li").eq(0).find("a").click(function () {
+                $(window.frameElement).attr("src", "Zgzs/index.html");
+            })
+            $(".book_list li").eq(1).find("a").click(function () {
+                $(window.frameElement).attr("src", "Gcwl/index.html");
+            })
+            $(".book_list li").eq(2).find("a").click(function () {
+                $(window.frameElement).attr("src", "Yfsj/index.html");
+            })
+            $(".book_list li").eq(3).find("a").click(function () {
+                $(window.frameElement).attr("src", "Zrjj1/index.html");
+            })
+            $(".book_list li").eq(4).find("a").click(function () {
+                $(window.frameElement).attr("src", "Zrjj2/index.html");
+            })
+        }
+    </script>
+</body>
+</html>

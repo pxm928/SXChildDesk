@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=1366, height=768, initial-scale=0, minimum-scale=0, maximum-scale=0" />
+    <title></title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/list.css" rel="stylesheet" />
+    <link href="WebUI/css/ScrollBar/nanoscroller.css" rel="stylesheet" type="text/css" />
+    <script src="WebUI/js/jquery-1.4.1.min.js"></script>
+    <script src="WebUI/js/ScrollBar/jquery.nanoscroller.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="main_box">
+        <!--关闭按钮-->
+        <a class="tipsbox_buttonBar dock" lock="false"></a>
+        <div class="filesbox_content">
+            <div class="nano" id="nano">
+                <div class="content">
+                    <div class="filesbox_left">
+                        <h1>组织结构</h1>
+                        <div class="org_struct"><img src="WebUI/images/list/org_struct.png" /></div>
+                    </div>
+                    <div class="filesbox_right indent">
+                        <div class="article org_list">
+                            <p><span style=" background-color:#238497"></span>综合办公室：</p> 
+                            <div>主要负责党务、人事、业务管理、考核、文秘、财务、档案、全馆形象宣传、外事、职工福利、车辆管理、计划生育。</div>
+                            <p><span style=" background-color: #307537"></span>后勤保障部：</p>
+                            <div>主要负责国有资产管理、卫生、安全、物业管理，存包柜管理。</div>
+                            <p><span style=" background-color: #8abc48"></span>读者活动部：</p>
+                            <div>主要负责重大活动策划、宣传、组织、实施，学会工作、员工业务培训、读者培训、讲座、展览组织及其场所的社会化利用。完成年度创收目标30万元。</div>
+                            <p><span style=" background-color: #e0a52d"></span>采编部：</p>
+                            <div>主要负责中、外文献信息资源采、分、编、加工。</div>
+                            <p><span style=" background-color: #f3d924"></span>历史文献部：</p>
+                            <div>主要负责古籍、民国资料、地方文献及其它专题文献收藏、利用及读者服务工作。</div>
+                            <p><span style=" background-color: #d25f19"></span>外借部：</p>
+                            <div>主要负责成人图书流通、馆外服务、读者活动、读者证办理、一卡通服务、24小时还书机管理。</div>
+                            <p><span style=" background-color: #cc1822"></span>报刊部：</p>
+                            <div>主要负责报刊阅读、读者活动、自修室管理。</div>
+                            <p><span style=" background-color: #b654a0"></span>信息技术部：</p>
+                            <div>主要负责网站、数据资源建设维护，自动化管理系统；数字图书馆建设与管理；《信息与参考》编辑，网上信息咨询服务；网上阅览室、视障读者阅览室的管理。</div>
+                            <p><span style=" background-color: #17a8c6"></span>少儿部：</p>
+                            <div>主要负责少儿图书流通、馆外服务、读者活动。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            $(".tipsbox_buttonBar").click(function () {
+                $(window.frameElement).parent().siblings(".filters").hide();
+                $(window.frameElement).parent().removeClass("shows");
+                setTimeout(function () {
+                    $(window.frameElement).parent().hide();
+                }, 300)
+                $(window.frameElement).css("display", "none");
+            })
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+﻿body{ background-color:transparent;}
+.main_box{ border:#a3a1a2 3px solid; background-color:#f6f6f6; width:1310px; height:762px; padding:0 20px 0 30px; border-radius:10px; position:relative;}
+.tipsbox_buttonBar{ background:url(../images/ico.png) no-repeat 0 -120px; width:44px; height:44px; position:absolute; right:14px; top:12px;}
+.tipsbox_buttonBar:active,.close{background:url(../images/ico.png) no-repeat 0 -164px;}
+.filesbox_content{ overflow:hidden; margin-top:60px; height:670px;}
+.filesbox_left{ width:410px; float:left;}
+.filesbox_content h1{ font:normal 40px/92px "Droid Sans Fallback",Arial;background:url(../images/list/tit_logo.png) no-repeat 47px center; color:#000; text-indent:137px; border-bottom:#949494 2px dotted;}
+.filesbox_left .map{ text-align:center; padding-top:20px;}
+.filesbox_right{float:left;margin-left:20px; width:860px;}
+.filesbox_right .intro_ul li{ float:left; width:394px; height:140px; margin-right:20px; border-radius:10px;}
+.filesbox_right .intro_ul li img{border-radius:10px;}
+.filesbox_right  .intro_ul{ overflow:hidden; margin:18px auto;}
+.article{ padding-top:100px;}
+.article div,.article p{ font:normal 22px/35px "Droid Sans Fallback",Arial; color:#000; text-indent:2em; text-justify:inter-ideograph; text-align:justify;}
+.article p span{ font:normal 20px/35px "Droid Sans Fallback",Arial; color:#000; }
+.filesbox_left .times{ padding-top:40px;}
+.filesbox_left .notes{ padding-top:15px;}
+.notes_ul{ margin-top:8px; overflow:hidden;}
+.notes_ul li{ float:left; width:143px; height:143px; margin:0 20px;}
+.indent div,.indent p{ text-indent:0;}
+.spread_div{ height:255px; margin-bottom:55px; overflow:hidden;}
+.spread_div ul{float:left; width:325px; margin-right:80px;}
+.spread_div li,.spread_div li span{font:normal 22px/42px "Droid Sans Fallback",Arial; color:#000;}
+.filesbox_left .spread,.filesbox_left .org_struct{ padding-top:30px;}
+.org_list p span{ width:21px; height:21px; display:inline-block; margin-right:22px;}
+.org_list div{ padding-left:43px;}
+.org_list div,.org_list p,.org_list{ line-height:50px;}
+.filesbox_left .guide{padding-top:50px;}
+.article h2{width:231px; height:46px; color:#fff;font:normal 22px/46px "Droid Sans Fallback",Arial; text-indent:12px; margin-top:50px;}
+.article h2.blue{background:url(../images/list/h2_tit.png) no-repeat; }
+.article h2.orange{background:url(../images/list/h2_tit2.png) no-repeat; }
+.indent2 p{text-indent:2em; line-height:40px;}
+.indent2 div{ text-indent:0; line-height:40px;}
+.filesbox_left .TVLibrary{padding-top:24px;}
+.Number{ position:relative;}
+.Number .NumLibrary{ position:absolute; left:0; top:120px;}
+.article h3{font:normal 25px/50px "Droid Sans Fallback",Arial; color:#3d6198; text-indent:5em;}
+.number_area{background:url(../images/list/number.png) no-repeat left top; margin:20px 0 0  100px; padding-left:20px;}
+.number_area p{ line-height:38px; text-indent:2.5em;}
+.QRcode{ position:absolute; left:-30px; top:650px; width:132px; text-align:center;font:normal 24px/50px "Droid Sans Fallback",Arial; color:#000; }
+.QRcode a{display:block;}
+.filesbox_content h4{ text-align:center;font:normal 36px/50px "Droid Sans Fallback",Arial; color:#552909;}
+.ancient_book{ width:1204px; margin:0 auto;}
+.ancient_book li{ width:1200px; border:#552909 2px solid; height:234px; background-color:#f1ece5; margin-top:24px; position:relative;}
+.ancient_book span{ position:absolute;background:url(../images/list/iframe.png) no-repeat; width:27px; height:27px;}
+.ancient_book span.l_t{ left:-3px; top:-3px; background-position:0 0;}
+.ancient_book span.r_t{ right:-3px; top:-3px; background-position:right 0;}
+.ancient_book span.l_b{ left:-3px; bottom:-3px; background-position:0 -25px;}
+.ancient_book span.r_b{ right:-3px; bottom:-3px; background-position:right -25px;}
+.book_area dl{ margin:7px 15px; overflow:hidden;}
+.book_area dt{ width:155px; height:215px;border:#584021 1px solid; float:left;}
+.book_area dd{ float:left;margin-left:15px;}
+.book_area dd p,.book_area dd p label,.book_area dd p a{font:normal 24px/50px "Droid Sans Fallback",Arial;}
+.book_area dd label{ width:80px;display:inline-block;color:#734e33; margin-right:10px;
+    text-align:justify;
+    text-justify:distribute-all-lines;/*ie6-8*/
+    text-align-last:justify;/* ie9*/
+    -moz-text-align-last:justify;/*ff*/
+    -webkit-text-align-last:justify;/*chrome 20+*/}
+.book_area dd p{ color:#4e4e4e;}
+.book_area dd p a{ color:#000;}
+.h4_tit{background:url(../images/list/h4_tit.png) no-repeat; width:270px; text-align:center; margin:0 auto;}
+.bookshelf_top{ position:absolute; left:25px; top:80px; width:1260px;}
+.shelf_l{ position:absolute; left:0; top:0; height:91px; width:11px;background:url(../images/list/bookshelf.gif) no-repeat 0 0; }
+.shelf_m{ height:91px; margin:0 11px; background:url(../images/list/bookshelf_m.gif) repeat-x;}
+.shelf_r{ position:absolute; right:0; top:0; height:91px; width:11px;background:url(../images/list/bookshelf.gif) no-repeat -11px 0; }
+.book_list{ margin-top:100px; margin-left:45px; overflow:hidden; position:relative; z-index:22;}
+.book_list li{ float:left; width:211px; height:450px; margin-right:35px;}
+.book_list li h5{ text-align:center; padding:0 5px;font:normal 24px/36px "Droid Sans Fallback",Arial; color:#262626; height:70px; width:211px; display:table-cell; text-align:center; vertical-align:middle;}
+.read{ background:url(../images/list/read.gif) no-repeat; width:165px; height:49px; display:block; margin:8px auto 0;}
+.bookshelf_bot{width:1260px; margin:-30px auto 0; position:relative;}
+.bookshelf_bot .shelf_l{ background-position:-22px 0;}
+.bookshelf_bot .shelf_r{ background-position:-33px 0;}
+.bookshelf_bot .shelf_m{background:url(../images/list/bookshelf_m2.gif) repeat-x left bottom;}
+.server_area{ border-left:#515151 3px solid; padding:30px 0 80px 0; min-height:500px; width:1200px; margin:0 auto;}
+.server_rig{ float:left;margin-left:26px; width:1125px;}
+.server_list b{ width:43px; height:43px; margin-left:-20px; background-color:#cf5d1f;float:left;}
+.server_tit{ background:url(../images/list/server_tit.gif) no-repeat; width:255px; height:42px; color:#fff;font:normal 24px/43px "Droid Sans Fallback",Arial; text-indent:35px;}
+.server_text{ margin-top:10px;}
+.server_text p{ text-indent:2em;font:normal 24px/40px "Droid Sans Fallback",Arial; color:#000; text-align:justify; text-justify:inter-ideograph;}
+.server_list{ margin-bottom:20px;}

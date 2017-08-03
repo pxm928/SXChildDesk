@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=1366, height=768, initial-scale=0, minimum-scale=0, maximum-scale=0" />
+    <title></title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/list.css" rel="stylesheet" />
+    <link href="WebUI/css/ScrollBar/nanoscroller.css" rel="stylesheet" type="text/css" />
+    <script src="WebUI/js/jquery-1.4.1.min.js"></script>
+    <script src="WebUI/js/ScrollBar/jquery.nanoscroller.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="main_box">
+        <!--关闭按钮-->
+        <a class="tipsbox_buttonBar dock" lock="false"></a>
+        <div class="filesbox_content">
+            <div class="nano" id="nano">
+                <div class="content">
+                    <div class="filesbox_left">
+                        <h1>绍图介绍</h1>
+                        <div class="map"><img src="WebUI/images/list/map.png" /></div>
+                    </div>
+                    <div class="filesbox_right" style="width:840px; margin-left:40px;">
+                        <ul class="intro_ul">
+                            <li><img src="WebUI/images/list/img1.jpg" /></li>
+                            <li><img src="WebUI/images/list/img2.jpg" /></li>
+                        </ul>
+                        <div class="article" style="padding:0;">
+                            <div>
+                                <p> 绍兴图书馆（又称绍兴市鲁迅图书馆）是绍兴市地市级公共图书馆，国家一级图书馆、全国古籍保护重点单位、省级文明单位。其前身为1902年徐树兰先生所创办的古越藏书楼，被大家公认为是我国最早的公共图书馆。内设办公室、后勤保障部、读者活动部、采编部、外借部、报刊部、历史文献部、信息技术部和少儿部等9个部室。</p>
+                                <div>绍兴图书馆一直秉承古越藏书楼“存古开新，平等共享”的服务理念，是全市图书借阅、参考咨询、文献检索、文献开发和图书馆业务辅导的中心。老馆位于延安路565号，建筑面积1.7万平方米，新馆位于洋江西路530号，建筑面积3.5万平方米。藏书130余万册，其中古籍16万余册，善本698种，四库系列和《四部丛刊》、《四部备要》等大型丛书近百种，民国绍兴地方报刊缩微资料11种，当代报刊1000多种，拥有中国知识资源总库、国研网、人大复印报刊资料全文数据库等20个数据库。此外，自建有古越文化、越州揽胜、绍兴名士、特色文献四大类21个栏目的特色数据库。</div>
+                                <p>绍兴图书馆承担全国文化信息共享工程绍兴市级分中心建设，目前市本级、各县（市、区）级中心均建成运行，全市城镇、乡（街道）基层中心覆盖率达到100%，村（社区）基层点覆盖率达到93%，充分利用网络、通讯以及数字技术手段，开辟不受地域与时空限制的文化传播渠道。</p>
+                                <p>绍兴图书馆立足于通过提供各种形式的资源与服务来满足绍兴公众、政府机关、企事业单位和社会团体在教育、信息、个人发展等方面的需要，为绍兴的社会进步、经济发展服务。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            $(".tipsbox_buttonBar").click(function () {
+                $(window.frameElement).parent().siblings(".filters").hide();
+                $(window.frameElement).parent().removeClass("shows");
+                setTimeout(function () {
+                    $(window.frameElement).parent().hide();
+                },300)
+                $(window.frameElement).css("display", "none");
+            })
+            
+        }
+    </script>
+</body>
+</html>

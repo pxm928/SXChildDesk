@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=1366, height=768, initial-scale=0, minimum-scale=0, maximum-scale=0" />
+    <title></title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/list.css" rel="stylesheet" />
+    <link href="WebUI/css/ScrollBar/nanoscroller.css" rel="stylesheet" type="text/css" />
+    <script src="WebUI/js/jquery-1.4.1.min.js"></script>
+    <script src="WebUI/js/ScrollBar/jquery.nanoscroller.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="main_box">
+        <!--关闭按钮-->
+        <a class="tipsbox_buttonBar dock" lock="false"></a>
+        <div class="filesbox_content">
+            <div class="nano" id="nano">
+                <div class="content">
+                    <div class="filesbox_left">
+                        <h1>办证指南</h1>
+                        <div class="guide"><img src="WebUI/images/list/guide.png" /></div>
+                    </div>
+                    <div class="filesbox_right indent2" style="width:840px;">
+                        <div class="article">
+                            <div>
+                                <div>办证中心：位于图书馆大厅外西侧。</div>
+                                <div>办证时间：9：00——17：30；周一休息</div>
+                                <div>发证办法：</div>
+                                <p>申请办证者须持个人有效证件（身份证、军人证、护照等），其中办理少儿借阅证的学生须持家长有效证件，到办证处交纳一定数量的押金，即可办理借书证。每张有效身份证可免费申办一张成人借阅证（初中以上读者使用）和一张少儿借阅证（初中及以下读者使用），首次办证免收工本费。</p>
+                                <p>绍兴图书馆读者证分成人借阅证、少儿借阅证二种。</p>
+                            </div>
+                            <div>
+                                <h2 class="blue">成人借阅证：</h2>
+                                <p>功能：可借阅本馆外借图书，可在各阅览室阅览，可查看本馆电子书库和数据库等数字资源。</p>
+                                <p>费用：押金100元。</p>
+                            </div>
+                            <div>
+                                <h2 class="blue">少儿借阅证：</h2>
+                                <p>功能：可在少儿馆借阅外借图书，阅览报刊，可查看本馆电子书库和数据库等数字资源。</p>
+                                <p>费用：押金50元。</p>
+                            </div>
+                            <div>
+                                <h2 class="orange">注意事项：</h2>
+                                <p>绍兴图书馆读者证仅限本人在本馆指定使用范围内借阅。</p>
+                                <p>绍兴图书馆读者证实行三年一次的年审制度，逾期核验后，方可继续使用。</p>
+                                <p>读者证遗失后请持本人身份证及时办理挂失手续。因未挂失所造成的后果均由读者自负。办理挂失手续后，可申请补办，重新补办读者证须先将所借图书归还，结清超期费等欠款，然后携带身份证、即可办理。</p>
+                            </div>
+                            <div>
+                                <p>借书证损坏、遗失补证，退证后再次办证，收取工本费每证10元。</p>
+                                <p>因各种原因需要退证的读者，请携带身份证、借阅证方可办理退还押金手续。</p>
+                                <p>需要提供网上读者信息查询、续借、预约等服务的读者，初始密码是身份证后六位，请自行在网上注册并修改密码。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            $(".tipsbox_buttonBar").click(function () {
+                $(window.frameElement).parent().siblings(".filters").hide();
+                $(window.frameElement).parent().removeClass("shows");
+                setTimeout(function () {
+                    $(window.frameElement).parent().hide();
+                }, 300)
+                $(window.frameElement).css("display", "none");
+            })
+
+        }
+    </script>
+</body>
+</html>

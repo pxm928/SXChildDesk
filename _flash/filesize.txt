@@ -1,0 +1,13 @@
+autorun.inf|60
+cmingtushuguan_university(pc).html|1092
+config_cmingtushuguan_university(pc).bin|190784
+images_cmingtushuguan_university(pc).zip|4162615
+map\1_1lou.jpg|374605
+map\1_1lou.zip|83400
+map\1_2lou.jpg|411403
+map\1_2lou.zip|69187
+map\3lou.jpg|355347
+map\3lou.zip|30740
+map\4lou.jpg|413185
+resources\swf_292.swf|34659
+resources\

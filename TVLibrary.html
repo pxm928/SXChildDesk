@@ -1,0 +1,51 @@
+﻿<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=1366, height=768, initial-scale=0, minimum-scale=0, maximum-scale=0" />
+    <title></title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/list.css" rel="stylesheet" />
+    <link href="WebUI/css/ScrollBar/nanoscroller.css" rel="stylesheet" type="text/css" />
+    <script src="WebUI/js/jquery-1.4.1.min.js"></script>
+    <script src="WebUI/js/ScrollBar/jquery.nanoscroller.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="main_box">
+        <!--关闭按钮-->
+        <a class="tipsbox_buttonBar dock" lock="false"></a>
+        <div class="filesbox_content">
+            <div class="nano" id="nano">
+                <div class="content">
+                    <div class="filesbox_left">
+                        <h1>电视图书馆</h1>
+                        <div class="TVLibrary"><img src="WebUI/images/list/TVLibrary.png" /></div>
+                    </div>
+                    <div class="filesbox_right" style="width:840px;">
+                        <div class="article">
+                            <div>
+                                <p>“绍兴电视图书馆” 系绍兴图书馆与中广有线绍兴分公司合作开发、联合建设的一个惠民项目。通过数字电视平台，以图文信息与视频相结合的方法，将绍兴图书馆的服务送到千家万户，实现了公共文化的“超市式供应”、“菜单化服务”。2013年10月，被列为创建第二批国家公共文化服务体系示范项目。</p>
+                                <p style="margin:20px 0; text-indent:10px;"><img src="WebUI/images/list/TV_list.png" /></p>
+                                <p>互动版共设置15个栏目，包括图书馆服务项目介绍、各类活动信息、书目查询、图书续借、电视图书、电视杂志、讲座、戏曲、图片等。用户通过电视遥控器进入到数字电视平台主页面，选择“视事通”中的“电视图书馆”栏目，就可以观看绍兴电视图书馆。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            $(".tipsbox_buttonBar").click(function () {
+                $(window.frameElement).parent().siblings(".filters").hide();
+                $(window.frameElement).parent().removeClass("shows");
+                setTimeout(function () {
+                    $(window.frameElement).parent().hide();
+                }, 300)
+                $(window.frameElement).css("display", "none");
+            })
+
+        }
+    </script>
+</body>
+</html>
