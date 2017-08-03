@@ -1,5 +1,5 @@
 # SXChildDesk
-绍兴少儿图书馆-桌面版 https://pxm928.github.io/SXChildDesk/index.html
+绍兴少儿图书馆-桌面版 https://pxm928.github.io/SXChildDesk
 
 
 我的个人主页 https://pxm928.github.io/HomePage
